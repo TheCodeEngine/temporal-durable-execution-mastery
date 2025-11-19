@@ -43,7 +43,7 @@ kubectl set image deployment/temporal-worker worker=v2.0.0  # ✅
 Nach diesem Kapitel können Sie:
 
 - Verschiedene Deployment-Strategien (Blue-Green, Canary, Rolling) anwenden
-- Workers graceful shutdownn und zero-downtime deployments durchführen
+- Workers graceful shutdown und zero-downtime deployments durchführen
 - Temporal Server selbst hosten oder Cloud nutzen
 - High Availability und Disaster Recovery implementieren
 - Capacity Planning durchführen
@@ -1518,7 +1518,7 @@ print(f"Daily growth: {result['daily_growth_gb']} GB")
 
 - **Kapitel 11**: Monitoring und Observability – Wie Sie Production-Workflows überwachen
 - **Kapitel 12**: Testing Strategies – Comprehensive testing für Temporal
-- **Kapitel 13**: Security Best Practices – Sichere Temporal-Deployments
+- **Kapitel 13**: Best Practices und Anti-Muster – Production-ready Temporal-Anwendungen
 
 ### Weiterführende Ressourcen
 
@@ -1531,7 +1531,7 @@ print(f"Daily growth: {result['daily_growth_gb']} GB")
 
 **[⬆ Zurück zum Inhaltsverzeichnis](README.md)**
 
-**Nächstes Kapitel**: [Kapitel 11: Skalierung der Worker](part-04-chapter-11.md)
+**Nächstes Kapitel**: [Kapitel 11: Monitoring und Observability](part-04-chapter-11.md)
 
 **Code-Beispiele für dieses Kapitel**: [`examples/part-04/chapter-10/`](../examples/part-04/chapter-10/)
 

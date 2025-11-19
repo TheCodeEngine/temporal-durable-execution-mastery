@@ -31,8 +31,8 @@
 # Part IV: Betrieb, Skalierung und Best Practices
 
 - [Kapitel 10: Produktions-Deployment](part-04-chapter-10.md)
-- [Kapitel 11: Skalierung der Worker](part-04-chapter-11.md)
-- [Kapitel 12: Observability und Monitoring](part-04-chapter-12.md)
+- [Kapitel 11: Monitoring und Observability](part-04-chapter-11.md)
+- [Kapitel 12: Testing Strategies](part-04-chapter-12.md)
 - [Kapitel 13: Best Practices und Anti-Muster](part-04-chapter-13.md)
 
 ---

@@ -2253,14 +2253,14 @@ Sie können jetzt Production-ready Monitoring aufsetzen! Aber Observability ist 
 **Weiter geht's mit:**
 
 - **Kapitel 12: Testing Strategies** – Wie Sie Workflows umfassend testen
-- **Kapitel 13: Security Best Practices** – Wie Sie Temporal sicher betreiben
+- **Kapitel 13: Best Practices und Anti-Muster** – Production-ready Temporal-Anwendungen
 - **Kapitel 14-15: Kochbuch** – Konkrete Patterns und Rezepte für häufige Use Cases
 
 ---
 
 **[⬆ Zurück zum Inhaltsverzeichnis](README.md)**
 
-**Nächstes Kapitel**: [Kapitel 12: Observability und Monitoring](part-04-chapter-12.md)
+**Nächstes Kapitel**: [Kapitel 12: Testing Strategies](part-04-chapter-12.md)
 
 **Code-Beispiele für dieses Kapitel**: [`examples/part-04/chapter-11/`](../examples/part-04/chapter-11/)
 
