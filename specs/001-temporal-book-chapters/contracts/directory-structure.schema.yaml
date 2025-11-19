@@ -1,0 +1,109 @@
+# Directory Structure Contract
+# Formal specification of required directories and files
+
+schema_version: "1.0.0"
+description: "Temporal Book project directory structure requirements"
+
+root:
+  required_files:
+    - name: "README.md"
+      type: "markdown"
+      description: "Book overview and navigation"
+
+    - name: ".gitignore"
+      type: "text"
+      description: "Python/uv ignore patterns"
+      required_patterns:
+        - "*.pyc"
+        - "__pycache__/"
+        - ".venv/"
+        - "*.egg-info/"
+        - ".uv/"
+
+  required_directories:
+    - name: "shared"
+      type: "python_package"
+      description: "Central utilities for all examples"
+      required_files:
+        - "__init__.py"
+        - "temporal_helpers.py"
+        - "examples_common.py"
+
+    - name: "part-i-grundlagen"
+      type: "part"
+      part_number: 1
+
+    - name: "part-ii-sdk-fokus"
+      type: "part"
+      part_number: 2
+
+    - name: "part-iii-resilienz"
+      type: "part"
+      part_number: 3
+
+    - name: "part-iv-betrieb"
+      type: "part"
+      part_number: 4
+
+    - name: "part-v-kochbuch"
+      type: "part"
+      part_number: 5
+
+part_structure:
+  naming_pattern: "part-(i|ii|iii|iv|v)-[a-z-]+"
+  required_subdirectories:
+    - name: "examples"
+      type: "directory"
+      description: "Contains all chapter example projects"
+
+  optional_subdirectories:
+    - name: "assets"
+      type: "directory"
+      description: "Shared images and diagrams for part"
+
+  required_files_pattern:
+    - pattern: "chapter-\\d{2}(-[a-z-]+)?\\.md"
+      min_count: 1
+      description: "Chapter markdown files"
+
+example_project_structure:
+  location: "part-{roman}-{name}/examples/chapter-{number:02d}/"
+  required_files:
+    - name: "pyproject.toml"
+      type: "toml"
+      description: "uv project configuration"
+      required_content:
+        project:
+          requires-python: ">=3.13"
+          dependencies:
+            - "temporalio>=1.5.0,<2.0.0"
+
+    - name: ".python-version"
+      type: "text"
+      description: "Python version specification"
+      required_content: "3.13"
+
+    - name: "README.md"
+      type: "markdown"
+      description: "Setup and usage instructions for examples"
+
+  expected_files:
+    - pattern: "*.py"
+      min_count: 1
+      description: "Python example scripts"
+
+validation_rules:
+  - rule: "exactly_five_parts"
+    description: "Repository must contain exactly 5 part directories"
+
+  - rule: "unique_chapter_numbers"
+    description: "Chapter numbers must be globally unique across all parts"
+
+  - rule: "sequential_chapters_per_part"
+    description: "Chapters within a part should be numbered sequentially"
+
+  - rule: "example_project_per_chapter"
+    description: "If chapter has_examples, corresponding example project must exist"
+
+  - rule: "shared_utilities_importable"
+    description: "Shared utilities must be importable as Python package"

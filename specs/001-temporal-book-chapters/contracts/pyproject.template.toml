@@ -1,0 +1,35 @@
+# pyproject.toml Template for Chapter Examples
+# This template should be used for all chapter example projects
+
+[project]
+name = "temporal-book-chapter-{CHAPTER_NUMBER:02d}"
+version = "0.1.0"
+description = "Examples for Chapter {CHAPTER_NUMBER}: {CHAPTER_TITLE}"
+requires-python = ">=3.13"
+dependencies = [
+    "temporalio>=1.5.0,<2.0.0",
+]
+
+# Optional: Add these dependencies if examples require them
+# "aiohttp>=3.9.0",      # For HTTP activities
+# "pydantic>=2.5.0",     # For data validation
+# "python-dotenv>=1.0.0", # For environment variables
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# Tool configurations (optional)
+[tool.uv]
+# uv-specific settings can go here
+
+[tool.ruff]
+# Code quality settings (optional, for linting)
+line-length = 100
+target-version = "py313"
+
+# Instructions for use:
+# 1. Replace {CHAPTER_NUMBER:02d} with zero-padded chapter number (e.g., "01", "15")
+# 2. Replace {CHAPTER_TITLE} with chapter title from outline
+# 3. Add additional dependencies as needed for specific examples
+# 4. Ensure temporalio version stays within specified range
