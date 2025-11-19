@@ -1196,8 +1196,12 @@ graph TB
     style Production fill:#90EE90
 ```
 
-**Nächstes Kapitel**: [Kapitel 6: Kommunikation (Signale und Queries)](part-02-chapter-06.md) – Wir tauchen tief in Workflow-Kommunikationspatterns ein!
-
 ---
+
+**[⬆ Zurück zum Inhaltsverzeichnis](README.md)**
+
+**Nächstes Kapitel**: [Kapitel 6: Kommunikation (Signale und Queries)](part-02-chapter-06.md)
+
+**Code-Beispiele für dieses Kapitel**: [`examples/part-02/chapter-05/`](../examples/part-02/chapter-05/)
 
 **Praktische Übung**: Implementieren Sie einen Entity Workflow mit Signals, Queries und Continue-As-New!

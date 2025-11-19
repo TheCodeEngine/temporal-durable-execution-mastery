@@ -3076,3 +3076,11 @@ In diesem Kapitel haben Sie die drei Kommunikationsmechanismen von Temporal kenn
 - **Kapitel 9**: Fortgeschrittene Resilienz-Patterns
 
 Die Kommunikationsmuster aus diesem Kapitel bilden die Grundlage für robuste, produktionsreife Temporal-Anwendungen.
+
+---
+
+**[⬆ Zurück zum Inhaltsverzeichnis](README.md)**
+
+**Nächstes Kapitel**: [Kapitel 7: Fehlerbehandlung und Retries](part-03-chapter-07.md)
+
+**Code-Beispiele für dieses Kapitel**: [`examples/part-02/chapter-06/`](../examples/part-02/chapter-06/)

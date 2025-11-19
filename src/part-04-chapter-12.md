@@ -1167,4 +1167,8 @@ Nach diesem Kapitel sollten Sie:
 
 ---
 
-**Nächstes Kapitel**: [Kapitel 13: Best Practices und Anti-Muster](part-04-chapter-13.md) – Wie Sie Temporal-Anwendungen optimal entwickeln und betreiben.
+**[⬆ Zurück zum Inhaltsverzeichnis](README.md)**
+
+**Nächstes Kapitel**: [Kapitel 13: Best Practices und Anti-Muster](part-04-chapter-13.md)
+
+**Code-Beispiele für dieses Kapitel**: [`examples/part-04/chapter-12/`](../examples/part-04/chapter-12/)

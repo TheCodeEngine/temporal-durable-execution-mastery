@@ -1285,6 +1285,8 @@ Mit diesem tiefen Verständnis der Temporal Service Architektur können wir nun 
 
 ---
 
-**Nächster Teil**: [Teil II: Der SDK-Fokus](../part-ii-sdk-fokus/README.md)
+**[⬆ Zurück zum Inhaltsverzeichnis](README.md)**
 
-**Code-Beispiele für dieses Kapitel**: [`../examples/part-01/chapter-03/`](../examples/part-01/chapter-03/)
+**Nächstes Kapitel**: [Kapitel 4: Entwicklungs-Setup und SDK-Auswahl](part-02-chapter-04.md)
+
+**Code-Beispiele für dieses Kapitel**: [`examples/part-01/chapter-03/`](../examples/part-01/chapter-03/)

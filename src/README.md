@@ -6,7 +6,7 @@
 
 Dieses Buch ist eine vollständige Einführung in Temporal.io, die führende Plattform für Durable Execution. Hier lernen Sie, wie Sie zuverlässige, skalierbare und wartbare verteilte Systeme entwickeln, indem Sie komplexe Workflows als einfachen Code schreiben.
 
-Das Buch kombiniert theoretische Grundlagen mit praktischen Python-Beispielen, die Sie direkt ausführen können. Jedes Kapitel enthält lauffähige Code-Beispiele aus dem [GitHub Repository](https://github.com/your-org/temporal-book), die Temporal-Konzepte demonstrieren.
+Das Buch kombiniert theoretische Grundlagen mit praktischen Python-Beispielen, die Sie direkt ausführen können. Jedes Kapitel enthält lauffähige Code-Beispiele aus dem [GitHub Repository](https://github.com/TheCodeEngine/temporal-durable-execution-mastery), die Temporal-Konzepte demonstrieren.
 
 ### Entstehung und Methodik
 
@@ -71,7 +71,7 @@ Praktische Rezepte für häufige Anwendungsfälle.
 
 ## Code-Beispiele
 
-Alle Code-Beispiele aus diesem Buch finden Sie im [GitHub Repository](https://github.com/your-org/temporal-book) unter `examples/`. Jedes Kapitel hat sein eigenes lauffähiges Python-Projekt:
+Alle Code-Beispiele aus diesem Buch finden Sie im [GitHub Repository](https://github.com/TheCodeEngine/temporal-durable-execution-mastery) unter `examples/`. Jedes Kapitel hat sein eigenes lauffähiges Python-Projekt:
 
 ```bash
 # Beispiel ausführen (z.B. Kapitel 1)

@@ -1628,6 +1628,12 @@ Sie haben jetzt:
 
 ---
 
+**[⬆ Zurück zum Inhaltsverzeichnis](README.md)**
+
+**Nächstes Kapitel**: [Kapitel 14: Muster-Rezepte (Human-in-Loop, Cron, Order Fulfillment)](part-05-chapter-14.md)
+
+**Code-Beispiele für dieses Kapitel**: [`examples/part-04/chapter-13/`](../examples/part-04/chapter-13/)
+
 ## Ressourcen
 
 - [Temporal Best Practices Blog](https://temporal.io/blog/spooky-stories-chilling-temporal-anti-patterns-part-1)

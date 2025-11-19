@@ -1170,8 +1170,12 @@ graph TB
     style Monitor fill:#ffffcc
 ```
 
-**Nächstes Kapitel**: [Kapitel 5: Workflows programmieren](part-02-chapter-05.md) – Wir tauchen tief in fortgeschrittene Workflow-Patterns ein!
-
 ---
+
+**[⬆ Zurück zum Inhaltsverzeichnis](README.md)**
+
+**Nächstes Kapitel**: [Kapitel 5: Workflows programmieren](part-02-chapter-05.md)
+
+**Code-Beispiele für dieses Kapitel**: [`examples/part-02/chapter-04/`](../examples/part-02/chapter-04/)
 
 **Praktische Übung**: Richten Sie Ihre lokale Entwicklungsumgebung ein und erstellen Sie Ihren ersten eigenen Workflow!

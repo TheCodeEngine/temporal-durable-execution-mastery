@@ -30,8 +30,8 @@ Hier finden Sie eine kuratierte Liste von Ressourcen, die Ihnen beim Lernen und 
 
 ## Dieses Buch
 
-- **GitHub Repository**: https://github.com/your-org/temporal-book
-- **Issues und Feedback**: https://github.com/your-org/temporal-book/issues
+- **GitHub Repository**: https://github.com/TheCodeEngine/temporal-durable-execution-mastery
+- **Issues und Feedback**: https://github.com/TheCodeEngine/temporal-durable-execution-mastery/issues
 
 ---
 

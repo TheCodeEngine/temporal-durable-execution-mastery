@@ -2258,6 +2258,12 @@ Sie können jetzt Production-ready Monitoring aufsetzen! Aber Observability ist 
 
 ---
 
+**[⬆ Zurück zum Inhaltsverzeichnis](README.md)**
+
+**Nächstes Kapitel**: [Kapitel 12: Observability und Monitoring](part-04-chapter-12.md)
+
+**Code-Beispiele für dieses Kapitel**: [`examples/part-04/chapter-11/`](../examples/part-04/chapter-11/)
+
 **💡 Tipp**: Monitoring ist nicht "set and forget". Review your dashboards and alerts regularly:
 - Monatlich: SLO Review (wurden sie eingehalten?)
 - Quarterly: Alert Review (zu viele False Positives?)

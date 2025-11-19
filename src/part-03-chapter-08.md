@@ -1503,3 +1503,11 @@ class EntityWorkflow:
 - ❌ Alte Versionen nicht entfernen
 
 Im nächsten Kapitel (Kapitel 9) werden wir **Fortgeschrittene Resilienz-Patterns** behandeln - komplexe Patterns für Production-Ready Systeme.
+
+---
+
+**[⬆ Zurück zum Inhaltsverzeichnis](README.md)**
+
+**Nächstes Kapitel**: [Kapitel 9: Workflow-Evolution und Versionierung](part-03-chapter-09.md)
+
+**Code-Beispiele für dieses Kapitel**: [`examples/part-03/chapter-08/`](../examples/part-03/chapter-08/)

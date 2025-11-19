@@ -1875,3 +1875,11 @@ class MultiStepApprovalWorkflow:
 | Manuelle Genehmigung | Human-in-the-Loop |
 
 Im nächsten Kapitel (Teil IV: Betrieb) werden wir uns mit **Production Deployments, Monitoring und Operations** beschäftigen - wie Sie Temporal-Systeme in Production betreiben.
+
+---
+
+**[⬆ Zurück zum Inhaltsverzeichnis](README.md)**
+
+**Nächstes Kapitel**: [Kapitel 10: Produktions-Deployment](part-04-chapter-10.md)
+
+**Code-Beispiele für dieses Kapitel**: [`examples/part-03/chapter-09/`](../examples/part-03/chapter-09/)

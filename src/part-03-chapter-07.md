@@ -1952,3 +1952,11 @@ async def write_to_dlq(items: List[ProcessingItem]) -> None:
 - ✅ Monitoring und Alerting
 
 Im nächsten Kapitel (Kapitel 8) werden wir uns mit **Workflow Evolution und Versioning** beschäftigen - wie Sie Workflows sicher ändern können während sie laufen.
+
+---
+
+**[⬆ Zurück zum Inhaltsverzeichnis](README.md)**
+
+**Nächstes Kapitel**: [Kapitel 8: SAGA Pattern](part-03-chapter-08.md)
+
+**Code-Beispiele für dieses Kapitel**: [`examples/part-03/chapter-07/`](../examples/part-03/chapter-07/)

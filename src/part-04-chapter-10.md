@@ -1529,4 +1529,10 @@ print(f"Daily growth: {result['daily_growth_gb']} GB")
 
 ---
 
+**[⬆ Zurück zum Inhaltsverzeichnis](README.md)**
+
+**Nächstes Kapitel**: [Kapitel 11: Skalierung der Worker](part-04-chapter-11.md)
+
+**Code-Beispiele für dieses Kapitel**: [`examples/part-04/chapter-10/`](../examples/part-04/chapter-10/)
+
 **Praxis-Tipp**: Beginnen Sie mit Temporal Cloud für schnellen Start. Wenn Sie spezifische Compliance- oder Kosten-Anforderungen haben, evaluieren Sie Self-Hosted. Unabhängig davon: Implementieren Sie von Anfang an graceful shutdown und Deployment-Strategien!
