@@ -55,41 +55,41 @@ uv run python simple_workflow.py
 
 Lernen Sie die Kernkonzepte von Temporal kennen und verstehen Sie, warum Durable Execution die Zukunft verteilter Systeme ist.
 
-- [Kapitel 1: Einführung in Temporal](./src/part-01-chapter-01.md)
-- [Kapitel 2: Kernbausteine: Workflows, Activities, Worker](./src/part-01-chapter-02.md)
-- [Kapitel 3: Architektur des Temporal Service](./src/part-01-chapter-03.md)
+- [Kapitel 1: Einführung in Temporal](part-01-chapter-01.md)
+- [Kapitel 2: Kernbausteine: Workflows, Activities, Worker](part-01-chapter-02.md)
+- [Kapitel 3: Architektur des Temporal Service](part-01-chapter-03.md)
 
 ### Teil II: Entwicklung von Temporal-Anwendungen (SDK-Fokus)
 
 Tauchen Sie ein in die praktische Entwicklung mit dem Temporal Python SDK.
 
-- [Kapitel 4: Entwicklungs-Setup und SDK-Auswahl](./src/part-02-chapter-04.md)
-- [Kapitel 5: Workflows programmieren](./src/part-02-chapter-05.md)
-- [Kapitel 6: Kommunikation (Signale und Queries)](./src/part-02-chapter-06.md)
+- [Kapitel 4: Entwicklungs-Setup und SDK-Auswahl](part-02-chapter-04.md)
+- [Kapitel 5: Workflows programmieren](part-02-chapter-05.md)
+- [Kapitel 6: Kommunikation (Signale und Queries)](part-02-chapter-06.md)
 
 ### Teil III: Resilienz, Evolution und Muster
 
 Meistern Sie fortgeschrittene Muster für robuste, evolvierbare Systeme.
 
-- [Kapitel 7: Fehlerbehandlung und Retries](./src/part-03-chapter-07.md)
-- [Kapitel 8: SAGA Pattern](./src/part-03-chapter-08.md)
-- [Kapitel 9: Workflow-Evolution und Versionierung](./src/part-03-chapter-09.md)
+- [Kapitel 7: Fehlerbehandlung und Retries](part-03-chapter-07.md)
+- [Kapitel 8: SAGA Pattern](part-03-chapter-08.md)
+- [Kapitel 9: Workflow-Evolution und Versionierung](part-03-chapter-09.md)
 
 ### Teil IV: Betrieb, Skalierung und Best Practices
 
 Bringen Sie Ihre Temporal-Anwendungen in die Produktion.
 
-- [Kapitel 10: Produktions-Deployment](./src/part-04-chapter-10.md)
-- [Kapitel 11: Skalierung der Worker](./src/part-04-chapter-11.md)
-- [Kapitel 12: Observability und Monitoring](./src/part-04-chapter-12.md)
-- [Kapitel 13: Best Practices und Anti-Muster](./src/part-04-chapter-13.md)
+- [Kapitel 10: Produktions-Deployment](part-04-chapter-10.md)
+- [Kapitel 11: Skalierung der Worker](part-04-chapter-11.md)
+- [Kapitel 12: Observability und Monitoring](part-04-chapter-12.md)
+- [Kapitel 13: Best Practices und Anti-Muster](part-04-chapter-13.md)
 
 ### Teil V: Das Temporal Kochbuch
 
 Praktische Rezepte für häufige Anwendungsfälle.
 
-- [Kapitel 14: Muster-Rezepte (Human-in-Loop, Cron, Order Fulfillment)](./src/part-05-chapter-14.md)
-- [Kapitel 15: Erweiterte Rezepte (AI Agents, Lambda, Polyglot)](./src/part-05-chapter-15.md)
+- [Kapitel 14: Muster-Rezepte (Human-in-Loop, Cron, Order Fulfillment)](part-05-chapter-14.md)
+- [Kapitel 15: Erweiterte Rezepte (AI Agents, Lambda, Polyglot)](part-05-chapter-15.md)
 
 ## Projektstruktur
 

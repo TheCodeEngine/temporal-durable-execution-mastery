@@ -1196,7 +1196,7 @@ graph TB
     style Production fill:#90EE90
 ```
 
-**Nächstes Kapitel**: [Kapitel 6: Kommunikation (Signale und Queries)](chapter-06.md) – Wir tauchen tief in Workflow-Kommunikationspatterns ein!
+**Nächstes Kapitel**: [Kapitel 6: Kommunikation (Signale und Queries)](part-02-chapter-06.md) – Wir tauchen tief in Workflow-Kommunikationspatterns ein!
 
 ---
 

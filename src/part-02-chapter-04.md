@@ -1170,7 +1170,7 @@ graph TB
     style Monitor fill:#ffffcc
 ```
 
-**Nächstes Kapitel**: [Kapitel 5: Workflows programmieren](chapter-05.md) – Wir tauchen tief in fortgeschrittene Workflow-Patterns ein!
+**Nächstes Kapitel**: [Kapitel 5: Workflows programmieren](part-02-chapter-05.md) – Wir tauchen tief in fortgeschrittene Workflow-Patterns ein!
 
 ---
 

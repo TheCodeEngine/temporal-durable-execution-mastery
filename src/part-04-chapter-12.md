@@ -1167,4 +1167,4 @@ Nach diesem Kapitel sollten Sie:
 
 ---
 
-**Nächstes Kapitel**: [Kapitel 13: Security Best Practices](chapter-13.md) – Wie Sie Temporal-Anwendungen sicher betreiben.
+**Nächstes Kapitel**: [Kapitel 13: Best Practices und Anti-Muster](part-04-chapter-13.md) – Wie Sie Temporal-Anwendungen optimal entwickeln und betreiben.

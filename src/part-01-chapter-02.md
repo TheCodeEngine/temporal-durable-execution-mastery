@@ -1252,6 +1252,6 @@ Mit diesem Verständnis der Kernbausteine können wir im nächsten Kapitel tiefe
 
 ---
 
-**Nächstes Kapitel**: [Kapitel 3: Architektur des Temporal Service](chapter-03.md)
+**Nächstes Kapitel**: [Kapitel 3: Architektur des Temporal Service](part-01-chapter-03.md)
 
 **Code-Beispiele für dieses Kapitel**: [`../examples/part-01/chapter-02/`](../examples/part-01/chapter-02/)
