@@ -1,0 +1,48 @@
+# mdBook Configuration
+# This file configures the Temporal book build and output settings
+
+[book]
+title = "Temporal.io – Durable Execution Mastery"
+authors = ["Konstantin Stoldt"]
+description = "Ein umfassender Deep Dive in die Orchestrierung verteilter Systeme mit Temporal"
+language = "de"
+src = "src"
+
+[build]
+build-dir = "book"
+create-missing = true
+
+[output.html]
+# HTML output configuration
+default-theme = "light"
+preferred-dark-theme = "navy"
+smart-punctuation = true
+mathjax-support = false
+no-section-label = false
+git-repository-url = "https://github.com/your-org/temporal-book"
+edit-url-template = "https://github.com/your-org/temporal-book/edit/main/{path}"
+site-url = "/temporal-book/"
+
+[output.html.print]
+enable = true
+
+[output.html.fold]
+enable = false
+level = 0
+
+[output.html.search]
+enable = true
+limit-results = 30
+teaser-word-count = 30
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 1
+boost-paragraph = 1
+expand = true
+heading-split-level = 3
+
+[output.html.playground]
+editable = false
+copyable = true
+line-numbers = false
+runnable = false

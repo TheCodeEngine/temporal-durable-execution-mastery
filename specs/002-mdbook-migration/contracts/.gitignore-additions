@@ -1,0 +1,8 @@
+# Add these lines to .gitignore for mdBook project
+
+# mdBook build output
+/book
+
+# Backup files from migration (if created)
+*.backup
+*.old
