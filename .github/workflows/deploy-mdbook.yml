@@ -6,7 +6,7 @@ name: Deploy mdBook to Pages
 on:
   # Runs on pushes to default branch
   push:
-    branches: [develop]  # Adjust to 'main' if that's your default branch
+    branches: [master]  # Adjust to 'main' if that's your default branch
 
   # Allows manual trigger from Actions tab
   workflow_dispatch:
