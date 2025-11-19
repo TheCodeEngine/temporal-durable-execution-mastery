@@ -89,7 +89,7 @@ class DataProcessingWorkflow:
         return {"input": data, "output": processed, "status": "completed"}
 ```
 
-> 📁 **Code-Beispiel**: [`part-i-grundlagen/examples/chapter-02/workflow.py`](examples/chapter-02/workflow.py)
+> 📁 **Code-Beispiel**: [`../examples/part-01/chapter-02/workflow.py`](../examples/part-01/chapter-02/workflow.py)
 
 ### 2.2.2 Der Determinismus-Constraint
 
@@ -363,7 +363,7 @@ async def send_notification(message: str) -> None:
     print(f"📧 Notification: {message}")
 ```
 
-> 📁 **Code-Beispiel**: [`part-i-grundlagen/examples/chapter-02/activities.py`](examples/chapter-02/activities.py)
+> 📁 **Code-Beispiel**: [`../examples/part-01/chapter-02/activities.py`](../examples/part-01/chapter-02/activities.py)
 
 ### 2.3.2 Activity-Timeouts
 
@@ -695,7 +695,7 @@ async def main():
     await worker.run()
 ```
 
-> 📁 **Code-Beispiel**: [`part-i-grundlagen/examples/chapter-02/worker.py`](examples/chapter-02/worker.py)
+> 📁 **Code-Beispiel**: [`../examples/part-01/chapter-02/worker.py`](../examples/part-01/chapter-02/worker.py)
 
 ### 2.4.2 Task Queues und Polling
 
@@ -1060,7 +1060,7 @@ Die Event History für diesen Flow:
 docker compose up -d
 
 # 2. Dependencies installieren
-cd part-i-grundlagen/examples/chapter-02
+cd ../examples/part-01/chapter-02
 uv sync
 ```
 
@@ -1254,4 +1254,4 @@ Mit diesem Verständnis der Kernbausteine können wir im nächsten Kapitel tiefe
 
 **Nächstes Kapitel**: [Kapitel 3: Architektur des Temporal Service](chapter-03.md)
 
-**Code-Beispiele für dieses Kapitel**: [`examples/chapter-02/`](examples/chapter-02/)
+**Code-Beispiele für dieses Kapitel**: [`../examples/part-01/chapter-02/`](../examples/part-01/chapter-02/)

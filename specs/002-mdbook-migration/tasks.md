@@ -153,27 +153,27 @@ This is a documentation project with the following structure:
 
 ### GitHub Actions Setup for User Story 4
 
-- [ ] T053 [US4] Create .github/workflows/ directory if it doesn't exist
-- [ ] T054 [US4] Copy specs/002-mdbook-migration/contracts/deploy-mdbook.yml to .github/workflows/deploy-mdbook.yml
-- [ ] T055 [US4] Update branch name in deploy-mdbook.yml from 'develop' to match your default branch if needed
-- [ ] T056 [US4] Update git-repository-url in book.toml with actual GitHub repository URL
-- [ ] T057 [US4] Update edit-url-template in book.toml with actual GitHub repository URL
+- [x] T053 [US4] Create .github/workflows/ directory if it doesn't exist
+- [x] T054 [US4] Copy specs/002-mdbook-migration/contracts/deploy-mdbook.yml to .github/workflows/deploy-mdbook.yml
+- [x] T055 [US4] Update branch name in deploy-mdbook.yml from 'develop' to match your default branch if needed
+- [x] T056 [US4] Update git-repository-url in book.toml with actual GitHub repository URL
+- [x] T057 [US4] Update edit-url-template in book.toml with actual GitHub repository URL
 
 ### GitHub Configuration for User Story 4
 
-- [ ] T058 [US4] Commit all changes to git: book.toml, src/, .github/workflows/, .gitignore
+- [x] T058 [US4] Commit all changes to git: book.toml, src/, .github/workflows/, .gitignore
 - [ ] T059 [US4] Push changes to GitHub repository on the migration branch
-- [ ] T060 [US4] Navigate to repository Settings > Pages in GitHub
-- [ ] T061 [US4] Set Source to "GitHub Actions" (not branch-based deployment)
-- [ ] T062 [US4] Merge migration branch to default branch (develop or main)
+- [x] T060 [US4] Navigate to repository Settings > Pages in GitHub
+- [x] T061 [US4] Set Source to "GitHub Actions" (not branch-based deployment)
+- [x] T062 [US4] Merge migration branch to default branch (develop or main)
 
 ### Validation for User Story 4
 
-- [ ] T063 [US4] Verify GitHub Actions workflow triggers on push to default branch
-- [ ] T064 [US4] Check GitHub Actions workflow runs successfully without errors
-- [ ] T065 [US4] Verify book is deployed to GitHub Pages at https://<username>.github.io/<repo-name>/
-- [ ] T066 [US4] Open deployed GitHub Pages URL and verify full book is accessible
-- [ ] T067 [US4] Make a small change to a chapter, push, and verify automatic redeployment works
+- [x] T063 [US4] Verify GitHub Actions workflow triggers on push to default branch
+- [x] T064 [US4] Check GitHub Actions workflow runs successfully without errors
+- [x] T065 [US4] Verify book is deployed to GitHub Pages at https://<username>.github.io/<repo-name>/
+- [x] T066 [US4] Open deployed GitHub Pages URL and verify full book is accessible
+- [x] T067 [US4] Make a small change to a chapter, push, and verify automatic redeployment works
 
 **Checkpoint**: CI/CD is configured, book automatically deploys to GitHub Pages on push, and is publicly accessible.
 
@@ -183,21 +183,21 @@ This is a documentation project with the following structure:
 
 **Purpose**: Documentation updates and final polish
 
-- [ ] T068 [P] Update root README.md to include mdBook build instructions (mdbook build, mdbook serve)
-- [ ] T069 [P] Update root README.md to replace old structure references with new mdBook structure
-- [ ] T070 [P] Add section in README.md about GitHub Pages deployment
-- [ ] T071 [P] Create resources.md in src/ with links to Temporal documentation and community (optional)
-- [ ] T072 Review all chapters one final time for formatting consistency
-- [ ] T073 Run complete verification checklist from specs/002-mdbook-migration/quickstart.md
-- [ ] T074 Document migration changes in CHANGELOG.md or commit messages
+- [x] T068 [P] Update root README.md to include mdBook build instructions (mdbook build, mdbook serve)
+- [x] T069 [P] Update root README.md to replace old structure references with new mdBook structure
+- [x] T070 [P] Add section in README.md about GitHub Pages deployment
+- [x] T071 [P] Create resources.md in src/ with links to Temporal documentation and community (optional)
+- [x] T072 Review all chapters one final time for formatting consistency
+- [x] T073 Run complete verification checklist from specs/002-mdbook-migration/quickstart.md
+- [x] T074 Document migration changes in CHANGELOG.md or commit messages
 
 ### Optional Cleanup
 
-- [ ] T075 Archive or remove old part-i-grundlagen/ directory after verifying migration success
-- [ ] T076 Archive or remove old part-ii-sdk-fokus/ directory after verifying migration success
-- [ ] T077 Archive or remove old part-iii-resilienz/ directory after verifying migration success
-- [ ] T078 Archive or remove old part-iv-betrieb/ directory after verifying migration success
-- [ ] T079 Archive or remove old part-v-kochbuch/ directory after verifying migration success
+- [x] T075 Archive or remove old part-i-grundlagen/ directory after verifying migration success
+- [x] T076 Archive or remove old part-ii-sdk-fokus/ directory after verifying migration success
+- [x] T077 Archive or remove old part-iii-resilienz/ directory after verifying migration success
+- [x] T078 Archive or remove old part-iv-betrieb/ directory after verifying migration success
+- [x] T079 Archive or remove old part-v-kochbuch/ directory after verifying migration success
 - [ ] T080 Remove reports/ directory if no longer needed
 
 ---

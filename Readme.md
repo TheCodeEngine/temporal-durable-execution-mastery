@@ -17,13 +17,34 @@ Das Buch kombiniert theoretische Grundlagen mit praktischen Python-Beispielen, d
 
 ## Schnellstart
 
+### Das Buch lesen
+
+**Online (empfohlen)**:
+- Besuchen Sie die veröffentlichte Version auf GitHub Pages: https://your-username.github.io/temporal-book/
+
+**Lokal bauen**:
 ```bash
 # Repository klonen
 git clone https://github.com/your-org/temporal-book.git
 cd temporal-book
 
+# mdBook installieren (falls noch nicht vorhanden)
+brew install mdbook  # macOS
+# oder: cargo install mdbook
+
+# Buch lokal bauen und öffnen
+mdbook build
+open book/index.html
+
+# Oder mit Live-Reload während der Bearbeitung
+mdbook serve --open
+```
+
+### Code-Beispiele ausführen
+
+```bash
 # Beispiel ausführen (z.B. Kapitel 1)
-cd part-i-grundlagen/examples/chapter-01
+cd examples/part-01/chapter-01
 uv sync
 uv run python simple_workflow.py
 ```
@@ -34,64 +55,69 @@ uv run python simple_workflow.py
 
 Lernen Sie die Kernkonzepte von Temporal kennen und verstehen Sie, warum Durable Execution die Zukunft verteilter Systeme ist.
 
-- [Kapitel 1: Einführung in Temporal](./part-i-grundlagen/chapter-01.md)
-- [Kapitel 2: Kernbausteine: Workflows, Activities, Worker](./part-i-grundlagen/chapter-02.md)
-- [Kapitel 3: Architektur des Temporal Service](./part-i-grundlagen/chapter-03.md)
+- [Kapitel 1: Einführung in Temporal](./src/part-01-chapter-01.md)
+- [Kapitel 2: Kernbausteine: Workflows, Activities, Worker](./src/part-01-chapter-02.md)
+- [Kapitel 3: Architektur des Temporal Service](./src/part-01-chapter-03.md)
 
 ### Teil II: Entwicklung von Temporal-Anwendungen (SDK-Fokus)
 
 Tauchen Sie ein in die praktische Entwicklung mit dem Temporal Python SDK.
 
-- [Kapitel 4: Entwicklungs-Setup und SDK-Auswahl](./part-ii-sdk-fokus/chapter-04.md)
-- [Kapitel 5: Workflows programmieren](./part-ii-sdk-fokus/chapter-05.md)
-- [Kapitel 6: Kommunikation (Signale und Queries)](./part-ii-sdk-fokus/chapter-06.md)
+- [Kapitel 4: Entwicklungs-Setup und SDK-Auswahl](./src/part-02-chapter-04.md)
+- [Kapitel 5: Workflows programmieren](./src/part-02-chapter-05.md)
+- [Kapitel 6: Kommunikation (Signale und Queries)](./src/part-02-chapter-06.md)
 
 ### Teil III: Resilienz, Evolution und Muster
 
 Meistern Sie fortgeschrittene Muster für robuste, evolvierbare Systeme.
 
-- [Kapitel 7: Fehlerbehandlung und Retries](./part-iii-resilienz/chapter-07.md)
-- [Kapitel 8: SAGA Pattern](./part-iii-resilienz/chapter-08.md)
-- [Kapitel 9: Workflow-Evolution und Versionierung](./part-iii-resilienz/chapter-09.md)
+- [Kapitel 7: Fehlerbehandlung und Retries](./src/part-03-chapter-07.md)
+- [Kapitel 8: SAGA Pattern](./src/part-03-chapter-08.md)
+- [Kapitel 9: Workflow-Evolution und Versionierung](./src/part-03-chapter-09.md)
 
 ### Teil IV: Betrieb, Skalierung und Best Practices
 
 Bringen Sie Ihre Temporal-Anwendungen in die Produktion.
 
-- [Kapitel 10: Produktions-Deployment](./part-iv-betrieb/chapter-10.md)
-- [Kapitel 11: Skalierung der Worker](./part-iv-betrieb/chapter-11.md)
-- [Kapitel 12: Observability und Monitoring](./part-iv-betrieb/chapter-12.md)
-- [Kapitel 13: Best Practices und Anti-Muster](./part-iv-betrieb/chapter-13.md)
+- [Kapitel 10: Produktions-Deployment](./src/part-04-chapter-10.md)
+- [Kapitel 11: Skalierung der Worker](./src/part-04-chapter-11.md)
+- [Kapitel 12: Observability und Monitoring](./src/part-04-chapter-12.md)
+- [Kapitel 13: Best Practices und Anti-Muster](./src/part-04-chapter-13.md)
 
 ### Teil V: Das Temporal Kochbuch
 
 Praktische Rezepte für häufige Anwendungsfälle.
 
-- [Kapitel 14: Muster-Rezepte (Human-in-Loop, Cron, Order Fulfillment)](./part-v-kochbuch/chapter-14.md)
-- [Kapitel 15: Erweiterte Rezepte (AI Agents, Lambda, Polyglot)](./part-v-kochbuch/chapter-15.md)
+- [Kapitel 14: Muster-Rezepte (Human-in-Loop, Cron, Order Fulfillment)](./src/part-05-chapter-14.md)
+- [Kapitel 15: Erweiterte Rezepte (AI Agents, Lambda, Polyglot)](./src/part-05-chapter-15.md)
 
 ## Projektstruktur
 
 ```
 temporal-book/
 ├── README.md                          # Dieses Dokument
-├── shared/                            # Gemeinsame Utilities für alle Beispiele
-│   ├── temporal_helpers.py            # Temporal Client Setup
-│   └── examples_common.py             # Gemeinsame Hilfsfunktionen
+├── book.toml                          # mdBook Konfiguration
+├── src/                               # Buch-Inhalt (mdBook)
+│   ├── SUMMARY.md                     # Inhaltsverzeichnis
+│   ├── README.md                      # Einleitung
+│   ├── part-01-chapter-01.md          # Kapitel (flache Struktur)
+│   └── images/                        # Bilder und Diagramme
 │
-├── part-i-grundlagen/                 # Teil I
-│   ├── chapter-01.md                  # Kapitel-Inhalte
-│   ├── examples/                      # Python-Beispiele
+├── book/                              # Generierte HTML-Ausgabe (gitignored)
+│
+├── examples/                          # Python-Beispiele
+│   ├── part-01/
 │   │   └── chapter-01/
 │   │       ├── pyproject.toml
 │   │       ├── .python-version
 │   │       └── *.py
-│   └── assets/                        # Bilder, Diagramme
+│   ├── part-02/
+│   ├── part-03/
+│   └── part-04/
 │
-├── part-ii-sdk-fokus/                 # Teil II
-├── part-iii-resilienz/                # Teil III
-├── part-iv-betrieb/                   # Teil IV
-└── part-v-kochbuch/                   # Teil V
+├── shared/                            # Gemeinsame Python-Utilities
+└── .github/workflows/                 # GitHub Actions für Deployment
+    └── deploy-mdbook.yml
 ```
 
 ## Beispiele ausführen
@@ -100,7 +126,7 @@ Jedes Kapitel enthält ein eigenes Python-Projekt mit ausführbaren Beispielen:
 
 ```bash
 # In ein Kapitel navigieren
-cd part-i-grundlagen/examples/chapter-01/
+cd examples/part-01/chapter-01/
 
 # Dependencies installieren
 uv sync
@@ -113,6 +139,20 @@ uv run python simple_workflow.py
 - Temporal Server läuft (lokal: `temporal server start-dev`)
 - Python 3.13 installiert
 - uv package manager installiert
+
+## GitHub Pages Deployment
+
+Das Buch wird automatisch über GitHub Actions auf GitHub Pages veröffentlicht:
+
+1. **Automatische Builds**: Bei jedem Push zum `develop` Branch wird das Buch neu gebaut
+2. **Deployment**: Die generierte Website wird automatisch auf GitHub Pages deployed
+3. **URL**: Das Buch ist verfügbar unter https://your-username.github.io/temporal-book/
+
+### Setup (einmalig erforderlich)
+
+1. In den Repository-Einstellungen → Pages
+2. Source auf "GitHub Actions" setzen
+3. Workflow wird automatisch ausgeführt bei Push zu `develop`
 
 ## Beiträge
 

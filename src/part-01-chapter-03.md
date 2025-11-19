@@ -1162,13 +1162,13 @@ class ServiceArchitectureWorkflow:
         }
 ```
 
-> 📁 **Code-Beispiel**: [`part-i-grundlagen/examples/chapter-03/service_interaction.py`](examples/chapter-03/service_interaction.py)
+> 📁 **Code-Beispiel**: [`../examples/part-01/chapter-03/service_interaction.py`](../examples/part-01/chapter-03/service_interaction.py)
 
 **Workflow ausführen**:
 
 ```bash
 # Terminal 1: Worker starten
-cd part-i-grundlagen/examples/chapter-03
+cd ../examples/part-01/chapter-03
 uv run python -m temporalio.worker \
     --task-queue book-examples \
     service_interaction
@@ -1287,4 +1287,4 @@ Mit diesem tiefen Verständnis der Temporal Service Architektur können wir nun 
 
 **Nächster Teil**: [Teil II: Der SDK-Fokus](../part-ii-sdk-fokus/README.md)
 
-**Code-Beispiele für dieses Kapitel**: [`examples/chapter-03/`](examples/chapter-03/)
+**Code-Beispiele für dieses Kapitel**: [`../examples/part-01/chapter-03/`](../examples/part-01/chapter-03/)

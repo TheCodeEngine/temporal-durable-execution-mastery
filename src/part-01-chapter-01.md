@@ -425,10 +425,10 @@ Im nächsten Kapitel werden wir tiefer in die **Kernbausteine** eintauchen und v
 
 ## Praktisches Beispiel
 
-Im Verzeichnis `examples/chapter-01/` finden Sie ein lauffähiges Beispiel eines einfachen Temporal Workflows:
+Im Verzeichnis `../examples/part-01/chapter-01/` finden Sie ein lauffähiges Beispiel eines einfachen Temporal Workflows:
 
 ```bash
-cd part-i-grundlagen/examples/chapter-01
+cd ../examples/part-01/chapter-01
 uv sync
 uv run python simple_workflow.py
 ```
