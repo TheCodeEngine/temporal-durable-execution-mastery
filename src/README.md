@@ -4,31 +4,30 @@
 
 ## Über dieses Buch
 
-Dieses Buch bietet eine vollständige Einführung in Temporal.io, die führende Plattform für Durable Execution. Sie lernen, wie Sie zuverlässige, skalierbare und wartbare verteilte Systeme entwickeln, indem Sie komplexe Workflows als einfachen Code schreiben.
+Dieses Buch ist eine vollständige Einführung in Temporal.io, die führende Plattform für Durable Execution. Hier lernen Sie, wie Sie zuverlässige, skalierbare und wartbare verteilte Systeme entwickeln, indem Sie komplexe Workflows als einfachen Code schreiben.
 
-Das Buch kombiniert theoretische Grundlagen mit praktischen Python-Beispielen, die Sie direkt ausführen können. Jedes Kapitel enthält lauffähige Code-Beispiele, die Temporal-Konzepte demonstrieren.
+Das Buch kombiniert theoretische Grundlagen mit praktischen Python-Beispielen, die Sie direkt ausführen können. Jedes Kapitel enthält lauffähige Code-Beispiele aus dem [GitHub Repository](https://github.com/your-org/temporal-book), die Temporal-Konzepte demonstrieren.
+
+### Entstehung und Methodik
+
+Dieses Buch wurde als persönliches Lernprojekt entwickelt, um Temporal.io umfassend zu verstehen und zu meistern. Die Inhalte entstanden in Zusammenarbeit mit generativer KI (Claude by Anthropic), wobei ich als Autor:
+- Die Lernziele, Struktur und inhaltliche Ausrichtung definiert habe
+- Alle Konzepte aktiv erarbeitet und hinterfragt habe
+- Die Code-Beispiele entwickelt und getestet habe
+- Die technische Korrektheit und praktische Anwendbarkeit sichergestellt habe
+
+Die KI diente dabei als interaktiver Lernpartner: Sie half mir, komplexe Temporal-Konzepte zu strukturieren, verschiedene Perspektiven zu beleuchten und das Gelernte in verständliche Erklärungen zu übersetzen. Dieser kollaborative Ansatz ermöglichte es mir, tiefer in die Materie einzutauchen und ein umfassendes Verständnis von Durable Execution zu entwickeln.
+
+Das Ergebnis ist ein Buch, das meine persönliche Lernreise dokumentiert und anderen helfen soll, Temporal.io systematisch zu erlernen.
 
 ## Voraussetzungen
 
 - Python 3.13+
 - uv package manager
-- Temporal CLI oder Docker (für lokale Entwicklung)
+- Temporal CLI oder Docker (für Code-Beispiele)
 - Grundkenntnisse in Python und verteilten Systemen
 
-## Schnellstart
-
-```bash
-# Repository klonen
-git clone https://github.com/your-org/temporal-book.git
-cd temporal-book
-
-# Beispiel ausführen (z.B. Kapitel 1)
-cd examples/part-01/chapter-01
-uv sync
-uv run python simple_workflow.py
-```
-
-## Inhaltsverzeichnis
+## Was Sie lernen werden
 
 ### Teil I: Grundlagen der Durable Execution
 
@@ -70,52 +69,16 @@ Praktische Rezepte für häufige Anwendungsfälle.
 - [Kapitel 14: Muster-Rezepte (Human-in-Loop, Cron, Order Fulfillment)](part-05-chapter-14.md)
 - [Kapitel 15: Erweiterte Rezepte (AI Agents, Lambda, Polyglot)](part-05-chapter-15.md)
 
-## Projektstruktur
+## Code-Beispiele
 
-```
-temporal-book/
-├── README.md                          # Repository README
-├── book.toml                          # mdBook Konfiguration
-├── src/                               # Buch-Inhalt (mdBook)
-│   ├── SUMMARY.md                     # Inhaltsverzeichnis
-│   ├── README.md                      # Dieses Dokument
-│   ├── part-01-chapter-01.md          # Kapitel (flache Struktur)
-│   └── images/                        # Bilder und Diagramme
-│
-├── book/                              # Generierte HTML-Ausgabe (gitignored)
-│
-├── examples/                          # Python-Beispiele
-│   ├── part-01/
-│   │   └── chapter-01/
-│   │       ├── pyproject.toml
-│   │       ├── .python-version
-│   │       └── *.py
-│   ├── part-02/
-│   ├── part-03/
-│   └── part-04/
-│
-└── shared/                            # Gemeinsame Python-Utilities
-```
-
-## Beispiele ausführen
-
-Jedes Kapitel enthält ein eigenes Python-Projekt mit ausführbaren Beispielen:
+Alle Code-Beispiele aus diesem Buch finden Sie im [GitHub Repository](https://github.com/your-org/temporal-book) unter `examples/`. Jedes Kapitel hat sein eigenes lauffähiges Python-Projekt:
 
 ```bash
-# In ein Kapitel navigieren
-cd examples/part-01/chapter-01/
-
-# Dependencies installieren
+# Beispiel ausführen (z.B. Kapitel 1)
+cd examples/part-01/chapter-01
 uv sync
-
-# Beispiel ausführen
 uv run python simple_workflow.py
 ```
-
-**Voraussetzungen für Beispiele**:
-- Temporal Server läuft (lokal: `temporal server start-dev`)
-- Python 3.13 installiert
-- uv package manager installiert
 
 ## Ressourcen
 
@@ -125,4 +88,4 @@ uv run python simple_workflow.py
 
 ---
 
-**Viel Erfolg beim Lernen von Temporal!** 🚀
+**Viel Erfolg beim Lernen von Temporal!**
