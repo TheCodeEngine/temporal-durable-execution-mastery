@@ -24,13 +24,13 @@ Dieses Buch entstand als persönliches Lernprojekt in Zusammenarbeit mit generat
 ### Das Buch lesen
 
 **Online (empfohlen)**:
-- Besuchen Sie die veröffentlichte Version auf GitHub Pages: https://your-username.github.io/temporal-book/
+- Besuchen Sie die veröffentlichte Version auf GitHub Pages: https://thecodeengine.github.io/temporal-durable-execution-mastery/
 
 **Lokal bauen**:
 ```bash
 # Repository klonen
-git clone https://github.com/your-org/temporal-book.git
-cd temporal-book
+git clone https://github.com/TheCodeEngine/temporal-durable-execution-mastery.git
+cd temporal-durable-execution-mastery
 
 # mdBook installieren (falls noch nicht vorhanden)
 brew install mdbook  # macOS
@@ -154,7 +154,7 @@ Das Buch wird automatisch über GitHub Actions auf GitHub Pages veröffentlicht:
 
 1. **Automatische Builds**: Bei jedem Push zum `develop` Branch wird das Buch neu gebaut
 2. **Deployment**: Die generierte Website wird automatisch auf GitHub Pages deployed
-3. **URL**: Das Buch ist verfügbar unter https://your-username.github.io/temporal-book/
+3. **URL**: Das Buch ist verfügbar unter https://thecodeengine.github.io/temporal-durable-execution-mastery/
 
 ### Setup (einmalig erforderlich)
 
