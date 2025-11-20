@@ -51,6 +51,20 @@ class GreetingWorkflow:
         return f"Hello, {name}! Welcome to Temporal."
 
 
+async def run_worker(client: Client):
+    """Run a worker to execute workflows."""
+    from temporalio.worker import Worker
+
+    worker = Worker(
+        client,
+        task_queue="book-examples",
+        workflows=[GreetingWorkflow],
+    )
+
+    logging.info("Worker started, listening on task queue: book-examples")
+    await worker.run()
+
+
 async def main():
     """Main function to start and execute the workflow."""
     setup_logging()
@@ -59,6 +73,12 @@ async def main():
     # Connect to Temporal server
     logging.info("Connecting to Temporal server at localhost:7233")
     client = await create_temporal_client()
+
+    # Start worker in background
+    worker_task = asyncio.create_task(run_worker(client))
+
+    # Give worker time to start
+    await asyncio.sleep(1)
 
     # Start the workflow
     workflow_id = "greeting-workflow-001"
@@ -78,6 +98,13 @@ async def main():
     logging.info(f"Workflow completed successfully!")
     logging.info(f"Result: {result}")
     print(f"\n✅ {result}\n")
+
+    # Cancel worker
+    worker_task.cancel()
+    try:
+        await worker_task
+    except asyncio.CancelledError:
+        pass
 
 
 if __name__ == "__main__":

@@ -50,6 +50,19 @@ class ServiceArchitectureWorkflow:
         }
 
 
+async def run_worker(client: Client):
+    """Run a worker to execute workflows."""
+    from temporalio.worker import Worker
+
+    worker = Worker(
+        client,
+        task_queue="architecture-demo",
+        workflows=[ServiceArchitectureWorkflow],
+    )
+
+    await worker.run()
+
+
 async def demonstrate_service_architecture():
     """
     Demonstrate Temporal service architecture concepts.
@@ -67,8 +80,13 @@ async def demonstrate_service_architecture():
     client = await create_temporal_client()
     logging.info("   ✓ Connected to Temporal service\n")
 
+    # Start worker in background
+    worker_task = asyncio.create_task(run_worker(client))
+    await asyncio.sleep(1)
+
     # Start workflow (Frontend → History Service)
-    workflow_id = "architecture-demo-001"
+    import uuid
+    workflow_id = f"architecture-demo-{uuid.uuid4().hex[:8]}"
     logging.info(f"2. Starting workflow (ID: {workflow_id})")
     logging.info("   Frontend schedules task...")
     logging.info("   History service creates event log...")
@@ -104,6 +122,13 @@ async def demonstrate_service_architecture():
     logging.info("✓ Worker - Executed workflow code")
 
     print(f"\n🎉 Result: {result}\n")
+
+    # Cancel worker
+    worker_task.cancel()
+    try:
+        await worker_task
+    except asyncio.CancelledError:
+        pass
 
 
 if __name__ == "__main__":
