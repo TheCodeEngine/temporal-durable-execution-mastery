@@ -9,7 +9,9 @@ import asyncio
 import sys
 from pathlib import Path
 
-sys.path.append(str(Path(__file__).parent.parent.parent.parent / "shared"))
+# Add project root to path for shared utilities
+project_root = Path(__file__).parent.parent.parent.parent
+sys.path.insert(0, str(project_root))
 
 from temporalio.worker import Worker
 from shared.temporal_helpers import create_temporal_client

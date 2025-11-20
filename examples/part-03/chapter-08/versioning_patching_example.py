@@ -12,7 +12,9 @@ from datetime import timedelta
 from dataclasses import dataclass
 from typing import Optional
 
-sys.path.append(str(Path(__file__).parent.parent.parent.parent / "shared"))
+# Add project root to path for shared utilities
+project_root = Path(__file__).parent.parent.parent.parent
+sys.path.insert(0, str(project_root))
 
 from temporalio import workflow, activity
 from temporalio.client import Client

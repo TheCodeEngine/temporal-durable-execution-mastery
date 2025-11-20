@@ -1,7 +1,7 @@
 [project]
-name = "temporal-book-chapter-01"
+name = "temporal-book-chapter-07"
 version = "0.1.0"
-description = "Examples for Chapter 1: Einführung in Temporal"
+description = "Examples for Chapter 7: Fehlerbehandlung und Retries"
 requires-python = ">=3.13"
 dependencies = [
     "temporalio>=1.5.0,<2.0.0",

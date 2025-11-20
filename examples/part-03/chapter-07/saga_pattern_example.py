@@ -12,7 +12,9 @@ from datetime import timedelta
 from dataclasses import dataclass
 from typing import Optional, List, Tuple, Callable
 
-sys.path.append(str(Path(__file__).parent.parent.parent.parent / "shared"))
+# Add project root to path for shared utilities
+project_root = Path(__file__).parent.parent.parent.parent
+sys.path.insert(0, str(project_root))
 
 from temporalio import workflow, activity
 from temporalio.client import Client
@@ -65,7 +67,7 @@ async def book_hotel(hotel_id: str) -> str:
     if "invalid" in hotel_id:
         raise ValueError(f"Invalid hotel ID: {hotel_id}")
 
-    booking_id = f"hotel_booking_{hotel_id}")
+    booking_id = f"hotel_booking_{hotel_id}"
     activity.logger.info(f"✓ Hotel booked: {booking_id}")
     return booking_id
 

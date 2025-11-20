@@ -13,7 +13,9 @@ from decimal import Decimal
 from typing import List, Optional
 from datetime import timedelta
 
-sys.path.append(str(Path(__file__).parent.parent.parent.parent / "shared"))
+# Add project root to path for shared utilities
+project_root = Path(__file__).parent.parent.parent.parent
+sys.path.insert(0, str(project_root))
 
 from temporalio import workflow, activity
 from temporalio.client import Client
