@@ -36,8 +36,9 @@ class ApprovalWorkflow:
     """Workflow mit Signal-basierter Genehmigung"""
 
     @workflow.init
-    def __init__(self) -> None:
+    def __init__(self, request_id: str) -> None:
         # WICHTIG: @workflow.init garantiert Ausführung vor Signal Handlern
+        self.request_id = request_id
         self.approved: Optional[bool] = None
         self.approver_name: Optional[str] = None
         self.comment: str = ""
@@ -58,7 +59,7 @@ class ApprovalWorkflow:
     @workflow.run
     async def run(self, request_id: str) -> str:
         """Wartet auf Signal via wait_condition"""
-        workflow.logger.info(f"Waiting for approval on request {request_id}")
+        workflow.logger.info(f"Waiting for approval on request {self.request_id}")
 
         # Warten bis Signal empfangen wurde (max 7 Tage)
         try:
@@ -68,12 +69,12 @@ class ApprovalWorkflow:
             )
         except asyncio.TimeoutError:
             # Auto-Reject nach Timeout
-            return f"Request {request_id} auto-rejected after timeout"
+            return f"Request {self.request_id} auto-rejected after timeout"
 
         if self.approved:
-            return f"Request {request_id} approved by {self.approver_name}"
+            return f"Request {self.request_id} approved by {self.approver_name}"
         else:
-            return f"Request {request_id} rejected by {self.approver_name}: {self.comment}"
+            return f"Request {self.request_id} rejected by {self.approver_name}: {self.comment}"
 
 
 async def run_signal_example():
