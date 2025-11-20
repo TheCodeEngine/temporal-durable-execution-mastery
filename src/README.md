@@ -1,5 +1,9 @@
 # Temporal.io – Durable Execution Mastery
 
+<p align="center">
+  <img src="images/cover.jpg" alt="Temporal.io – Durable Execution Mastery" width="400"/>
+</p>
+
 **Ein umfassender Deep Dive in die Orchestrierung verteilter Systeme mit Temporal**
 
 ## Über dieses Buch
